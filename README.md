@@ -32,7 +32,7 @@ javascript:(function(){function%20queryVariable(variable){var%20query=window.loc
 Opens a YouTube Mix corresponding to the currently playing Video, even if YouTube doesn't show you Mix as an option.
 ```
 javascript:(function(){function%20queryVariable(variable){var%20query=window.location.search.substring(1);var%20vars=query.split(%22%26%22);for(var%20i=0;i%3Cvars.length;i++){var%20pair=vars[i].split(%22=%22);if(pair[0]==variable){return%20pair[1];}}return(false);}var%20o=queryVariable(%22v%22)window.location=%22https://www.youtube.com/watch%253Fv=%22+o+%22%2526list=RD%22+o})();
-
+```
 
 ## License
 MIT
